@@ -1,2 +1,0 @@
-(this.webpackJsonpconfringo=this.webpackJsonpconfringo||[]).push([[5],{18:function(n,t,c){"use strict";c.r(t);c(0);var i=c(2);t.default=function(){return Object(i.jsx)("div",{children:"Contact"})}}}]);
-//# sourceMappingURL=5.ee4259f2.chunk.js.map
