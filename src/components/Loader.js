@@ -1,9 +1,10 @@
 import React from 'react'
+import logo from '../assets/logo.svg'
 
 const Loader = () => {
   return (
     <h1 className="vh-100 d-flex justify-content-center align-items-center">
-      CONFRINGO
+      <img className='img-fluid' src={logo} alt="CONFRINGO" width={220} />
     </h1>
   )
 }

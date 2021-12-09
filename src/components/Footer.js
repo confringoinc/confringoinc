@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import logo from '../assets/logo_black.svg'
 import { FiFacebook, FiInstagram, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 const Footer = () => {
+  const ref = useRef(null)
+
+  window.onscroll = () => {
+    if(window.pageYOffset > 400) {
+      ref.current.classList.add("show")
+      ref.current.classList.remove("hide")
+    }
+    else {
+      ref.current.classList.add("hide")
+      ref.current.classList.remove("show")
+    }
+  }
+
   return (
-    <div className='bg-secondary text-light mt-5'>
+    <div className='bg-secondary text-light mt-10'>
       <div className='container pt-5'>
         <div>
           <img src={logo} width={220} alt="CONFRINGO" />
@@ -13,7 +26,7 @@ const Footer = () => {
           <ul className='col-12 col-md-6 mt-5 list-unstyled'>
             <li><a href="/">Services</a></li>
             <li className='mt-3'><a href="/">Products</a></li>
-            <li className='mt-3'><a href="/">Carreer</a></li>
+            <li className='mt-3'><a href="/">Career</a></li>
             <li className='mt-3'><a href="/">About</a></li>
           </ul>
           <div className='col-12 col-md-6 mt-5'>
@@ -39,9 +52,10 @@ const Footer = () => {
             <a className="ms-4 followLink" href='https://www.linkedin.com/in/patelhit125/' target='_blank' rel='noreferrer'><FiLinkedin /></a>
             <a className="ms-4 followLink" href='https://twitter.com/patelhit125' target='_blank' rel='noreferrer'><FiTwitter /></a>
           </div>
-          <div className='col text-center text-md-start'>&copy; {new Date().getFullYear()} | All right reserved.</div>
+          <div className='col text-center text-md-start text-muted'>&copy; CONFRINFGO {new Date().getFullYear()} | All right reserved.</div>
         </div>
       </div>
+      <div className="toTop btn btn-primary" ref={ref} onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>Top &#8599;</div>
     </div>
   )
 }

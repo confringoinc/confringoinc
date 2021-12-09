@@ -2190,7 +2190,7 @@ progress {
   color: #e6e6e6;
   background-color: #2a3552;
   background-clip: padding-box;
-  border: 1px solid #2a3552;
+  border: 1px solid transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2211,7 +2211,7 @@ progress {
 .form-control:focus {
   color: #e4e4e4;
   background-color: #344268;
-  border-color: #2a3552;
+  border-color: transparent;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
@@ -3000,7 +3000,7 @@ textarea.form-control-lg {
 }
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(108, 167, 255, 0.25);
 }
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
   pointer-events: none;
@@ -7750,7 +7750,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #445470 !important;
+  color: #5c7196 !important;
 }
 
 .text-black-50 {
@@ -7912,6 +7912,10 @@ textarea.form-control-lg {
 
 .rounded-3 {
   border-radius: 0.3rem !important;
+}
+
+.rounded-4 {
+  border-radius: 2rem !important;
 }
 
 .rounded-circle {
