@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import banner1 from '../assets/banner_1.svg'
 import banner2 from '../assets/banner_2.svg'
 import service1 from '../assets/webdevelopment.svg'
@@ -69,78 +70,78 @@ const Home = () => {
           >
             <Slider className='mt-3 row'>
               <Slide index={0}>
-                <div class="item me-3">
+                <div className="item me-3">
                   <img className='img-fluid rounded-4' src="https://unsplash.com/photos/aJYO8JmVodY/download?ixid=MnwxMjA3fDF8MXxhbGx8MXx8fHx8fDJ8fDE2MzkwNzI4Mjg&force=true&w=1920" alt="" />
-                  <div class="overlay bottom-overlay rounded-4 d-flex align-items-end justify-content-end">
+                  <div className="overlay bottom-overlay rounded-4 d-flex align-items-end justify-content-end">
                     <div className='p-4'>
                       <h3 className='fw-bold'>First Project</h3>
-                      <div>
-                        Lorem ipsum dolor.
-                      </div>
+                      <Link className='text-decoration-none' to='/'>
+                        Launch &#8594;
+                      </Link>
                     </div>
                   </div>
                 </div>
               </Slide>
               <Slide index={1}>
-                <div class="item me-3">
+                <div className="item me-3">
                   <img className='img-fluid rounded-4' src="https://unsplash.com/photos/cJWhVkruh7s/download?ixid=MnwxMjA3fDB8MXxhbGx8M3x8fHx8fDJ8fDE2MzkwNzI4Mjg&force=true&w=1920" alt="" />
-                  <div class="overlay bottom-overlay rounded-4 d-flex align-items-end justify-content-end">
+                  <div className="overlay bottom-overlay rounded-4 d-flex align-items-end justify-content-end">
                     <div className='p-4'>
                       <h3 className='fw-bold'>Second Project</h3>
-                      <div>
-                        Lorem ipsum dolor.
-                      </div>
+                      <Link className='text-decoration-none' to='/'>
+                        Launch &#8594;
+                      </Link>
                     </div>
                   </div>
                 </div></Slide>
               <Slide index={2}>
-                <div class="item me-3">
+                <div className="item me-3">
                   <img className='img-fluid rounded-4' src="https://unsplash.com/photos/L8iPhY86y5A/download?ixid=MnwxMjA3fDB8MXxhbGx8OXx8fHx8fDJ8fDE2MzkwNzI4Mjg&force=true&w=1920" alt="" />
-                  <div class="overlay bottom-overlay rounded-4 d-flex align-items-end justify-content-end">
+                  <div className="overlay bottom-overlay rounded-4 d-flex align-items-end justify-content-end">
                     <div className='p-4'>
                       <h3 className='fw-bold'>Third Project</h3>
-                      <div>
-                        Lorem ipsum dolor.
-                      </div>
+                      <Link className='text-decoration-none' to='/'>
+                        Launch &#8594;
+                      </Link>
                     </div>
                   </div>
                 </div>
               </Slide>
               <Slide index={3}>
-                <div class="item me-3">
+                <div className="item me-3">
                   <img className='img-fluid rounded-4' src="https://unsplash.com/photos/cqMecmrVmoo/download?ixid=MnwxMjA3fDB8MXxhbGx8MTl8fHx8fHwyfHwxNjM5MDcyODI4&force=true&w=1920" alt="" />
-                  <div class="overlay bottom-overlay rounded-4 d-flex align-items-end justify-content-end">
+                  <div className="overlay bottom-overlay rounded-4 d-flex align-items-end justify-content-end">
                     <div className='p-4'>
                       <h3 className='fw-bold'>Fourth Project</h3>
-                      <div>
-                        Lorem ipsum dolor.
-                      </div>
+                      <Link className='text-decoration-none' to='/'>
+                        Launch &#8594;
+                      </Link>
                     </div>
                   </div>
                 </div>
               </Slide>
               <Slide index={4}>
-                <div class="item me-3">
+                <div className="item me-3">
                   <img className='img-fluid rounded-4' src="https://unsplash.com/photos/T7nGkdpGdzk/download?ixid=MnwxMjA3fDB8MXxhbGx8MTd8fHx8fHwyfHwxNjM5MDcyODI4&force=true&w=1920" alt="" />
-                  <div class="overlay bottom-overlay rounded-4 d-flex align-items-end justify-content-end">
+                  <div className="overlay bottom-overlay rounded-4 d-flex align-items-end justify-content-end">
                     <div className='p-4'>
                       <h3 className='fw-bold'>Fifth Project</h3>
-                      <div>
-                        Lorem ipsum dolor.
-                      </div>
+                      <Link className='text-decoration-none' to='/'>
+                        Launch &#8594;
+                      </Link>
                     </div>
                   </div>
                 </div>
               </Slide>
               <Slide index={5}>
-                <div class="item me-3">
+                <div className="item me-3">
                   <img className='img-fluid rounded-4' src="https://unsplash.com/photos/wMHZsFZg7oI/download?ixid=MnwxMjA3fDB8MXxhbGx8MjJ8fHx8fHwyfHwxNjM5MDcyODI4&force=true&w=1920" alt="" />
-                  <div class="overlay bottom-overlay rounded-4 d-flex align-items-end justify-content-end">
+                  <div className="overlay bottom-overlay rounded-4 d-flex align-items-end justify-content-end">
                     <div className='p-4'>
                       <h3 className='fw-bold'>Sixth Project</h3>
-                      <div>
-                        Lorem ipsum dolor.
-                      </div>
+                      <Link className='text-decoration-none' to='/'>
+                        Launch &#8594;
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -278,16 +279,16 @@ const Home = () => {
         <div className='d-flex justify-content-center align-items-center mt-10'>
           <div className='col-md-8 text-center'>
             <h2 className='fw-bold'>Stop wasting your valuable time to just thinking. Have an idea? Tell us about it.</h2>
-            <div className='row mt-2'>
+            <form method='post' className='row mt-2'>
               <div className='col'>
                 <div className="input-group">
-                  <input type="text" className="form-control bg-light" />
+                  <input type="email" className="form-control bg-light text-dark" />
                 </div>
               </div>
               <div className='col-md-auto'>
-                <div className='mt-3 mt-md-0 btn btn-primary'>Submit a request</div>
+                <div type="submit" className='mt-3 mt-md-0 btn btn-primary'>Submit a request</div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>

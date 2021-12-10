@@ -23,6 +23,7 @@ body::-webkit-scrollbar-thumb {
 
 .navbar {
   background-color: #fff;
+  z-index: 999;
 }
 
 .navbarToggler {
@@ -108,22 +109,45 @@ body::-webkit-scrollbar-thumb {
   left: 8px;
 }
 
+@media (max-width: 768px) {
+  #navContent {
+    position: fixed;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    font-size: calc(1.325rem + 0.9vw);
+    font-weight: bold;
+    margin-top: 6rem;
+  }
+
+  .rounded-pill {
+    border-radius: 0 !important;
+  }
+
+  #navContent .followLink {
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+.bottom-1 {
+  bottom: 15px;
+}
+
 .followLink {
   background-color: #27384d;
   color: #fff;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 1.05rem;
   border-radius: 50rem;
 }
 
 .bg-secondary a {
-  color: rgb(156, 156, 156);
+  color: #5c7196;
   text-decoration: none;
-}
-
-@media (max-width: 768px) {
-  .rounded-pill {
-    border-radius: 0 !important;
-  }
 }
 
 .fw-1 {
@@ -134,17 +158,20 @@ body::-webkit-scrollbar-thumb {
 .overlay {
   position: absolute;
   background-color: #0056fc;
-  color: #fff;
+  color: #fff !important;
   overflow: hidden;
   width: 250px;
   height: 200px;
   transition: 0.5s ease;
 }
 
+.overlay a {
+  color: #fff !important;
+}
+
 .item {
   position: relative;
   overflow: hidden;
-  cursor: pointer;
 }
 
 .item:hover .overlay {
